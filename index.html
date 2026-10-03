@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Family Vault</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+    <main class="app">
+
+        <!-- Header -->
+        <header class="header">
+
+            <div class="profile">
+                <img src="images\Screenshot 2026-10-02 204944.png" alt="Profile">
+
+                <div class="profile-text">
+                    <h2>PRAVEEN KUMAR VARANASI</h2>
+                    <p>Welcome Back!</p>
+                </div>
+            </div>
+
+            <div class="header-actions">
+
+                <button class="circle-button">
+                    <i class="fa-regular fa-calendar"></i>
+                </button>
+
+                <button class="circle-button">
+                    <i class="fa-regular fa-bell"></i>
+                </button>
+
+            </div>
+
+        </header>
+
+
+        <!-- Search -->
+        <div class="search-box">
+
+            <i class="fa-solid fa-magnifying-glass search-icon"></i>
+
+            <input
+                type="text"
+                placeholder='Search "Wife Aadhaar Card"'
+            >
+
+            <i class="fa-solid fa-microphone microphone"></i>
+
+        </div>
+
+
+        <!-- Family -->
+        <section class="section">
+
+            <div class="section-heading">
+                <h1>My Family</h1>
+
+                <button class="edit-button">
+                    <i class="fa-regular fa-pen-to-square"></i>
+                </button>
+            </div>
+
+
+            <div class="family-card">
+
+                <div class="family-person me">
+
+                    <div class="person-role invisible">Me</div>
+
+                    <img src="images\Screenshot 2026-10-02 204944.png" alt="Me">
+
+                    <p>Me</p>
+
+                </div>
+
+
+                <div class="divider"></div>
+
+
+                <div class="family-person">
+
+                    <div class="person-role">Wife</div>
+
+
+                    <img src="images\Screenshot 2026-10-02 205402.png" alt="Wife">
+
+                    <p>Manjeera Bhargavi V</p>
+
+                </div>
+
+
+                <div class="family-person">
+
+                    <div class="person-role">Mother</div>
+
+                    <img src="images\Screenshot 2026-10-03 091521.png" alt="Mother">
+
+                    <p>B Vijaya Parvathi</p>
+
+                </div>
+
+
+                <div class="family-person">
+
+                    <div class="person-role"></div>
+
+                    <img src="images\Screenshot 2026-10-02 205541.png" alt="Son">
+
+                    <p>V V S ABHIRAM</p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Main Categories -->
+        <section class="section categories-section">
+
+            <div class="section-heading">
+
+                <h1>Main Categories</h1>
+
+                <a href="#">See all</a>
+
+            </div>
+
+
+            <div class="category-scroll">
+
+                <button class="category-card identity">
+
+                    <i class="fa-solid fa-fingerprint"></i>
+
+                    <span>Identity</span>
+
+                </button>
+
+
+                <button class="category-card finance">
+
+                    <i class="fa-solid fa-building-columns"></i>
+
+                    <span>Finance</span>
+
+                </button>
+
+
+                <button class="category-card diary">
+
+                    <i class="fa-regular fa-bookmark"></i>
+
+                    <span>Diary</span>
+
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- Needs Attention -->
+        <section class="section attention-section">
+
+            <div class="section-heading">
+
+                <h1>Needs Attention</h1>
+
+                <a href="#">See all</a>
+
+            </div>
+
+
+            <article class="attention-card">
+
+                <div class="attention-top">
+
+                    <div class="insurance-icon">
+                        <i class="fa-solid fa-hand-holding-medical"></i>
+                    </div>
+
+
+                    <div class="attention-content">
+
+                        <div class="attention-meta">
+
+                            <span class="insurance-label">
+                                Insurance
+                            </span>
+
+                            <span class="days">
+                                16 days ago
+                            </span>
+
+                        </div>
+
+
+                        <h2>
+                            Bajaj Alliance Motor Insurance
+                        </h2>
+
+
+                        <p class="description">
+                            Your Bajaj Alliance is
+                            <strong>Unrenew in three days.</strong>
+                        </p>
+
+
+                        <p class="due-date">
+                            Due Date : 30-09-2026
+                        </p>
+
+
+                        <div class="attention-buttons">
+
+                            <button class="remind">
+                                Remind Later
+                            </button>
+
+                            <button class="renew">
+                                Renew Now
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+        </section>
+
+
+        <!-- Extra spacing so bottom nav doesn't cover content -->
+        <div class="bottom-space"></div>
+
+    </main>
+
+
+    <!-- Bottom Navigation -->
+    <nav class="bottom-nav">
+
+        <a href="#" class="nav-item active">
+            <i class="fa-solid fa-house"></i>
+            <span>Home</span>
+        </a>
+
+
+        <a href="#" class="nav-item">
+            <i class="fa-solid fa-people-roof"></i>
+            <span>My Family</span>
+        </a>
+
+
+        <button class="add-button">
+            <i class="fa-solid fa-plus"></i>
+        </button>
+
+
+        <a href="#" class="nav-item">
+            <i class="fa-solid fa-table-cells-large"></i>
+            <span>Category</span>
+        </a>
+
+
+        <a href="#" class="nav-item">
+            <i class="fa-solid fa-gear"></i>
+            <span>Settings</span>
+        </a>
+
+    </nav>
+
+</body>
+
+</html>

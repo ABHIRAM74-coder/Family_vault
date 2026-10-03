@@ -1,0 +1,1068 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    font-size: 16px;
+}
+
+
+body {
+    font-family: "Poppins", sans-serif;
+    color: #111111;
+
+    min-height: 100vh;
+
+    background:
+        linear-gradient(
+            155deg,
+            #f5f1ff 0%,
+            #ddd0ff 28%,
+            #eee8ff 58%,
+            #ffffff 100%
+        );
+}
+
+
+button,
+input {
+    font-family: inherit;
+}
+
+
+button,
+a {
+    -webkit-tap-highlight-color: transparent;
+}
+
+
+button {
+    border: none;
+    cursor: pointer;
+}
+
+
+a {
+    color: inherit;
+}
+
+
+/* ========================================
+   MAIN APP
+======================================== */
+
+.app {
+    width: 100%;
+    max-width: 1450px;
+
+    margin: auto;
+
+    padding:
+        clamp(28px, 5vw, 70px)
+        clamp(24px, 5vw, 80px)
+        40px;
+}
+
+
+/* ========================================
+   HEADER
+======================================== */
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 48px;
+}
+
+
+.profile {
+    display: flex;
+    align-items: center;
+
+    gap: 22px;
+}
+
+
+.profile img {
+    width: 105px;
+    height: 105px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+}
+
+
+.profile-text h2 {
+    font-size: 28px;
+    font-weight: 600;
+
+    line-height: 1.25;
+}
+
+
+.profile-text p {
+    font-size: 20px;
+
+    margin-top: 4px;
+}
+
+
+.header-actions {
+    display: flex;
+    align-items: center;
+
+    gap: 22px;
+}
+
+
+.circle-button {
+    width: 70px;
+    height: 70px;
+
+    border-radius: 50%;
+
+    background: rgba(255, 255, 255, 0.85);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 28px;
+
+    box-shadow: 0 5px 18px rgba(50, 25, 100, 0.06);
+}
+
+
+/* ========================================
+   SEARCH
+======================================== */
+
+.search-box {
+    height: 105px;
+
+    background: rgba(255, 255, 255, 0.92);
+
+    border-radius: 35px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 0 35px;
+
+    gap: 26px;
+
+    box-shadow:
+        0 6px 22px rgba(58, 29, 120, 0.06);
+
+    margin-bottom: 52px;
+}
+
+
+.search-icon {
+    font-size: 42px;
+    color: #08051f;
+}
+
+
+.search-box input {
+    flex: 1;
+
+    min-width: 0;
+
+    border: none;
+    outline: none;
+
+    background: transparent;
+
+    font-size: 22px;
+
+    color: #333333;
+}
+
+
+.search-box input::placeholder {
+    color: #8c8990;
+    opacity: 1;
+}
+
+
+.microphone {
+    font-size: 33px;
+}
+
+
+/* ========================================
+   SECTIONS
+======================================== */
+
+.section {
+    margin-bottom: 55px;
+}
+
+
+.section-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 22px;
+}
+
+
+.section-heading h1 {
+    font-size: 36px;
+    font-weight: 600;
+}
+
+
+.section-heading a {
+    font-size: 20px;
+    font-weight: 500;
+
+    color: #474249;
+}
+
+
+.edit-button {
+    background: transparent;
+
+    font-size: 28px;
+}
+
+
+/* ========================================
+   FAMILY
+======================================== */
+
+.family-card {
+    background: rgba(255, 255, 255, 0.85);
+
+    border-radius: 28px;
+
+    padding: 25px 30px;
+
+    display: grid;
+
+    grid-template-columns:
+        1fr
+        1px
+        1fr
+        1fr
+        1fr;
+
+    align-items: center;
+
+    column-gap: 25px;
+
+    box-shadow:
+        0 5px 20px rgba(68, 38, 120, 0.05);
+}
+
+
+.family-person {
+    min-width: 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
+}
+
+
+.person-role {
+    font-size: 21px;
+
+    margin-bottom: 12px;
+
+    white-space: nowrap;
+}
+
+
+.invisible {
+    visibility: hidden;
+}
+
+
+.family-person img {
+    width: 100px;
+    height: 100px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+}
+
+
+.family-person p {
+    margin-top: 12px;
+
+    font-size: 19px;
+}
+
+
+.divider {
+    height: 115px;
+
+    width: 1px;
+
+    background: #ddd8e4;
+}
+
+
+/* ========================================
+   CATEGORIES
+======================================== */
+
+.category-scroll {
+    display: flex;
+
+    gap: 18px;
+
+    overflow-x: auto;
+
+    padding: 3px 3px 14px;
+
+    scrollbar-width: none;
+}
+
+
+.category-scroll::-webkit-scrollbar {
+    display: none;
+}
+
+
+.category-card {
+    flex: 0 0 auto;
+
+    min-width: 235px;
+    height: 90px;
+
+    border-radius: 45px;
+
+    background: rgba(255, 255, 255, 0.88);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 16px;
+
+    font-size: 23px;
+    font-weight: 500;
+
+    box-shadow:
+        0 7px 20px rgba(72, 45, 110, 0.08);
+}
+
+
+.category-card i {
+    font-size: 34px;
+}
+
+
+.identity {
+    color: #c66c1c;
+}
+
+
+.finance {
+    color: #1682bd;
+}
+
+
+.diary {
+    color: #bd0ca6;
+}
+
+
+/* ========================================
+   NEEDS ATTENTION
+======================================== */
+
+.attention-card {
+    background: rgba(255, 255, 255, 0.67);
+
+    border: 1px solid rgba(255, 255, 255, 0.9);
+
+    border-radius: 28px;
+
+    padding: 30px;
+
+    box-shadow:
+        0 4px 18px rgba(62, 37, 100, 0.05);
+}
+
+
+.attention-top {
+    display: flex;
+
+    gap: 20px;
+}
+
+
+.insurance-icon {
+    flex: 0 0 auto;
+
+    width: 78px;
+    height: 78px;
+
+    border-radius: 15px;
+
+    background: #eadfff;
+
+    color: #7539cf;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 34px;
+}
+
+
+.attention-content {
+    flex: 1;
+
+    min-width: 0;
+}
+
+
+.attention-meta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 20px;
+}
+
+
+.insurance-label {
+    color: #7554a8;
+
+    font-size: 18px;
+}
+
+
+.days {
+    color: #99959d;
+
+    font-size: 16px;
+}
+
+
+.attention-content h2 {
+    margin-top: 5px;
+
+    font-size: 25px;
+    font-weight: 500;
+}
+
+
+.description {
+    margin-top: 10px;
+
+    font-size: 17px;
+}
+
+
+.description strong {
+    font-weight: 600;
+}
+
+
+.due-date {
+    margin-top: 12px;
+
+    color: #cf3645;
+
+    font-size: 19px;
+    font-weight: 500;
+}
+
+
+.attention-buttons {
+    display: flex;
+
+    justify-content: flex-end;
+
+    gap: 15px;
+
+    margin-top: 25px;
+}
+
+
+.attention-buttons button {
+    min-width: 180px;
+
+    padding: 15px 25px;
+
+    border-radius: 30px;
+
+    font-size: 18px;
+}
+
+
+.remind {
+    background: white;
+
+    border: 1px solid #d6cedf;
+
+    color: #55505c;
+}
+
+
+.renew {
+    background: linear-gradient(
+        135deg,
+        #5321b6,
+        #2f078c
+    );
+
+    color: white;
+
+    box-shadow:
+        0 6px 15px rgba(72, 20, 170, 0.22);
+}
+
+
+/* ========================================
+   BOTTOM NAVIGATION
+======================================== */
+
+.bottom-space {
+    height: 100px;
+}
+
+
+.bottom-nav {
+    position: fixed;
+
+    z-index: 100;
+
+    left: 50%;
+    bottom: 20px;
+
+    transform: translateX(-50%);
+
+    width: calc(100% - 50px);
+    max-width: 850px;
+
+    height: 105px;
+
+    padding: 12px 25px;
+
+    border-radius: 38px;
+
+    background: rgba(255, 255, 255, 0.92);
+
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+
+    box-shadow:
+        0 7px 30px rgba(68, 31, 120, 0.18);
+
+    display: grid;
+
+    grid-template-columns:
+        1fr
+        1fr
+        100px
+        1fr
+        1fr;
+
+    align-items: center;
+}
+
+
+.nav-item {
+    text-decoration: none;
+
+    color: #a59db4;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 5px;
+
+    font-size: 14px;
+    font-weight: 500;
+}
+
+
+.nav-item i {
+    font-size: 26px;
+}
+
+
+.nav-item.active {
+    color: #37139c;
+}
+
+
+.add-button {
+    position: relative;
+
+    width: 80px;
+    height: 80px;
+
+    justify-self: center;
+
+    border-radius: 50%;
+
+    background: linear-gradient(
+        145deg,
+        #5a20c3,
+        #300590
+    );
+
+    color: white;
+
+    font-size: 32px;
+
+    border: 7px solid #f6f1ff;
+
+    box-shadow:
+        0 5px 14px rgba(50, 11, 125, 0.25);
+}
+
+
+/* ========================================
+   TABLETS
+======================================== */
+
+@media (max-width: 900px) {
+
+    .app {
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+
+
+    .profile img {
+        width: 85px;
+        height: 85px;
+    }
+
+
+    .profile-text h2 {
+        font-size: 24px;
+    }
+
+
+    .profile-text p {
+        font-size: 18px;
+    }
+
+
+    .family-card {
+        column-gap: 15px;
+
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+
+    .family-person img {
+        width: 85px;
+        height: 85px;
+    }
+
+
+    .person-role {
+        font-size: 18px;
+    }
+
+}
+
+
+/* ========================================
+   MOBILE
+======================================== */
+
+@media (max-width: 600px) {
+
+    body {
+        background:
+            linear-gradient(
+                160deg,
+                #f5f1ff 0%,
+                #d9c9ff 32%,
+                #eee8ff 68%,
+                #ffffff 100%
+            );
+    }
+
+
+    .app {
+        padding:
+            38px
+            22px
+            25px;
+    }
+
+
+    /* Header */
+
+    .header {
+        margin-bottom: 38px;
+    }
+
+
+    .profile {
+        gap: 14px;
+    }
+
+
+    .profile img {
+        width: 66px;
+        height: 66px;
+    }
+
+
+    .profile-text h2 {
+        font-size: 18px;
+    }
+
+
+    .profile-text p {
+        font-size: 15px;
+
+        margin-top: 2px;
+    }
+
+
+    .header-actions {
+        gap: 12px;
+    }
+
+
+    .circle-button {
+        width: 50px;
+        height: 50px;
+
+        font-size: 20px;
+    }
+
+
+    /* Search */
+
+    .search-box {
+        height: 78px;
+
+        border-radius: 26px;
+
+        padding: 0 23px;
+
+        gap: 17px;
+
+        margin-bottom: 40px;
+    }
+
+
+    .search-icon {
+        font-size: 29px;
+    }
+
+
+    .search-box input {
+        font-size: 15px;
+    }
+
+
+    .microphone {
+        font-size: 24px;
+    }
+
+
+    /* Sections */
+
+    .section {
+        margin-bottom: 42px;
+    }
+
+
+    .section-heading {
+        margin-bottom: 17px;
+    }
+
+
+    .section-heading h1 {
+        font-size: 25px;
+    }
+
+
+    .section-heading a {
+        font-size: 15px;
+    }
+
+
+    .edit-button {
+        font-size: 21px;
+    }
+
+
+    /* Family */
+
+    .family-card {
+        border-radius: 22px;
+
+        padding: 19px 14px;
+
+        column-gap: 9px;
+    }
+
+
+    .person-role {
+        font-size: 14px;
+
+        margin-bottom: 8px;
+    }
+
+
+    .family-person img {
+        width: 63px;
+        height: 63px;
+    }
+
+
+    .family-person p {
+        margin-top: 8px;
+
+        font-size: 13px;
+    }
+
+
+    .divider {
+        height: 90px;
+    }
+
+
+    /* Categories */
+
+    .category-scroll {
+        gap: 12px;
+
+        margin-right: -22px;
+    }
+
+
+    .category-card {
+        min-width: 170px;
+        height: 66px;
+
+        border-radius: 35px;
+
+        gap: 11px;
+
+        font-size: 16px;
+    }
+
+
+    .category-card i {
+        font-size: 25px;
+    }
+
+
+    /* Attention */
+
+    .attention-card {
+        border-radius: 22px;
+
+        padding: 20px 17px;
+    }
+
+
+    .attention-top {
+        gap: 12px;
+    }
+
+
+    .insurance-icon {
+        width: 52px;
+        height: 52px;
+
+        border-radius: 10px;
+
+        font-size: 23px;
+    }
+
+
+    .insurance-label {
+        font-size: 13px;
+    }
+
+
+    .days {
+        font-size: 11px;
+    }
+
+
+    .attention-content h2 {
+        font-size: 17px;
+
+        line-height: 1.35;
+    }
+
+
+    .description {
+        font-size: 12px;
+
+        line-height: 1.6;
+    }
+
+
+    .due-date {
+        font-size: 14px;
+    }
+
+
+    .attention-buttons {
+        gap: 9px;
+
+        margin-top: 18px;
+    }
+
+
+    .attention-buttons button {
+        min-width: 0;
+
+        flex: 1;
+
+        padding: 11px 10px;
+
+        font-size: 13px;
+    }
+
+
+    /* Bottom nav */
+
+    .bottom-space {
+        height: 100px;
+    }
+
+
+    .bottom-nav {
+        width: calc(100% - 32px);
+
+        height: 82px;
+
+        bottom: 13px;
+
+        border-radius: 29px;
+
+        padding: 8px 10px;
+
+        grid-template-columns:
+            1fr
+            1fr
+            72px
+            1fr
+            1fr;
+    }
+
+
+    .nav-item {
+        font-size: 10px;
+
+        gap: 3px;
+    }
+
+
+    .nav-item i {
+        font-size: 20px;
+    }
+
+
+    .add-button {
+        width: 65px;
+        height: 65px;
+
+        border-width: 5px;
+
+        font-size: 26px;
+    }
+
+}
+
+
+/* ========================================
+   VERY SMALL PHONES
+======================================== */
+
+@media (max-width: 390px) {
+
+    .app {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+
+    .profile-text h2 {
+        font-size: 16px;
+    }
+
+
+    .profile-text p {
+        font-size: 13px;
+    }
+
+
+    .profile img {
+        width: 58px;
+        height: 58px;
+    }
+
+
+    .circle-button {
+        width: 44px;
+        height: 44px;
+    }
+
+
+    .family-card {
+        column-gap: 5px;
+
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
+
+    .family-person img {
+        width: 55px;
+        height: 55px;
+    }
+
+
+    .person-role {
+        font-size: 12px;
+    }
+
+
+    .family-person p {
+        font-size: 12px;
+    }
+
+
+    .section-heading h1 {
+        font-size: 23px;
+    }
+
+
+    .bottom-nav {
+        width: calc(100% - 20px);
+    }
+
+}
